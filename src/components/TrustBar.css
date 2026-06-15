@@ -1,0 +1,40 @@
+.trustbar {
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--cream-dark);
+  padding: 22px 0;
+}
+
+.trustbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.trustbar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--charcoal);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.trustbar__item svg {
+  width: 22px;
+  height: 22px;
+  color: var(--green-mid);
+  flex-shrink: 0;
+}
+
+@media (max-width: 740px) {
+  .trustbar__inner {
+    justify-content: center;
+    gap: 14px 22px;
+  }
+  .trustbar__item {
+    font-size: 0.82rem;
+  }
+}
