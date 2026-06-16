@@ -1,6 +1,6 @@
-# Debt Resolution Federation — UK Debt Help Website
+# Debt Free Helpline — UK Debt Help Website
 
-A static, single-page React website for **Debt Resolution Federation** — a UK debt-help and IVA specialist company (since 2013). Built with **Vite + React** and crafted to feel like a trusted, regulated UK debt-charity service.
+A static, single-page React website for **Debt Free Helpline** — a UK debt-help and IVA specialist company (since 2013). Built with **Vite + React** and crafted to feel like a trusted, regulated UK debt-charity service.
 
 ## Features
 
