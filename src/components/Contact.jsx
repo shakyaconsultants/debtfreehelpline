@@ -53,7 +53,7 @@ export default function Contact() {
               </span>
               <div>
                 <h4>Visit Our Office</h4>
-                <p>21 Garlick Hill, London EC4V 2AU, United Kingdom</p>
+                <p>13 Wilton Place, Basingstoke, Hampshire, RG21 7UD</p>
               </div>
             </li>
             <li>
@@ -74,8 +74,8 @@ export default function Contact() {
               <div>
                 <h4>Email Us</h4>
                 <p>
-                  <a href="mailto:info@debtresolutionfederation.org.uk">
-                    info@debtresolutionfederation.org.uk
+                  <a href="mailto:info@debtfreehelpline.org.uk">
+                    info@debtfreehelpline.org.uk
                   </a>
                 </p>
               </div>
@@ -190,7 +190,7 @@ export default function Contact() {
               <label className="contact__check">
                 <input type="checkbox" required />
                 <span>
-                  I agree to be contacted by Debt Resolution Federation and have read the{" "}
+                  I agree to be contacted by Debt Free Helpline and have read the{" "}
                   <a href="#footer">privacy policy</a>.
                 </span>
               </label>

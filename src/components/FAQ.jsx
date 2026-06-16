@@ -4,7 +4,7 @@ import "./FAQ.css";
 
 const FAQS = [
   {
-    q: "Is contacting Debt Resolution Federation free?",
+    q: "Is contacting Debt Free Helpline free?",
     a: "Yes. Your initial consultation, eligibility check and personalised debt advice are 100% free of charge. We will only ever charge a fee if you choose to proceed with a formal debt solution like an IVA, and any fees are explained clearly and in writing before you commit to anything.",
   },
   {

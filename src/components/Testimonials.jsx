@@ -9,7 +9,7 @@ const REVIEWS = [
     debt: "\u00A322,400 of debt",
     rating: 5,
     quote:
-      "I was drowning in credit card debt after my divorce. The team at Debt Resolution Federation listened, never judged, and helped me set up an IVA that I could actually afford. Two years in and I sleep at night again.",
+      "I was drowning in credit card debt after my divorce. The team at Debt Free Helpline listened, never judged, and helped me set up an IVA that I could actually afford. Two years in and I sleep at night again.",
     solution: "IVA Solution",
   },
   {

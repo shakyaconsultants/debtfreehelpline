@@ -36,9 +36,9 @@ export default function Footer() {
       <div className="container footer__top">
         <div className="footer__brand">
           <a href="#top" className="footer__logo-row">
-            <img src={logo} alt="Debt Resolution Federation logo" />
+            <img src={logo} alt="Debt Free Helpline logo" />
             <span>
-              <strong>Debt Resolution Federation</strong>
+              <strong>Debt Free Helpline</strong>
               <small>Trusted UK Debt Help · Since 2013</small>
             </span>
           </a>
@@ -50,11 +50,12 @@ export default function Footer() {
             <a href="tel:03330916630">
               <FiPhone aria-hidden /> 0333 091 6630
             </a>
-            <a href="mailto:info@debtresolutionfederation.org.uk">
-              <FiMail aria-hidden /> info@debtresolutionfederation.org.uk
+            <a href="mailto:info@debtfreehelpline.org.uk">
+              <FiMail aria-hidden /> info@debtfreehelpline.org.uk
             </a>
             <span>
-              <FiMapPin aria-hidden /> 21 Garlick Hill, London EC4V 2AU
+              <FiMapPin aria-hidden /> 13 Wilton Place, Basingstoke, Hampshire, RG21 7UD
+
             </span>
           </div>
           <div className="footer__social" aria-label="Social media">
@@ -103,7 +104,7 @@ export default function Footer() {
         <div className="footer__legal">
           <h5>Important Information</h5>
           <p>
-            Debt Resolution Federation provides free, confidential debt advice. We may refer
+            Debt Free Helpline provides free, confidential debt advice. We may refer
             clients to a licensed Insolvency Practitioner who will charge fees for setting up and
             managing a formal debt solution such as an Individual Voluntary Arrangement (IVA).
             All fees are clearly disclosed in writing before any agreement is entered into.
@@ -128,8 +129,9 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p>
-            &copy; {year} Debt Resolution Federation Ltd. All rights reserved. Registered in
-            England &amp; Wales. Registered Office: 21 Garlick Hill, London EC4V 2AU.
+            &copy; {year} Debt Free Helpline Ltd. All rights reserved. Registered in
+            England &amp; Wales. Registered Office: 13 Wilton Place, Basingstoke, Hampshire, RG21 7UD
+.
           </p>
           <ul>
             <li><a href="#">Privacy Policy</a></li>

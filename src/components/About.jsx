@@ -41,7 +41,7 @@ export default function About() {
           <span className="eyebrow">About Us</span>
           <h2>Real people, real debt help — since 2013.</h2>
           <p>
-            Debt Resolution Federation was founded with one simple belief: that anyone struggling
+            Debt Free  was founded with one simple belief: that anyone struggling
             with debt deserves clear, honest, professional advice — without shame, hidden fees, or
             sales pressure. Today, we are proud to be one of the UK's most trusted debt-help
             services, supporting individuals and families across England, Wales, Scotland and

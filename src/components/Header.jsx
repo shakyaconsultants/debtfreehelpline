@@ -26,8 +26,8 @@ export default function Header() {
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <div className="container header__inner">
 
-        <a href="#top" className="header__brand" aria-label="Debt Resolution Federation home">
-          <img src={logo} alt="Debt Resolution Federation" className="header__logo" />
+        <a href="#top" className="header__brand" aria-label="Debt Free Helpline home">
+          <img src={logo} alt="Debt Free Helpline" className="header__logo" />
         </a>
 
         <nav className={`header__nav ${open ? "is-open" : ""}`} aria-label="Primary navigation">

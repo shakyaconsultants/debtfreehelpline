@@ -14,7 +14,7 @@ export default function Hero() {
             Get out of debt — <span className="hero__accent">with dignity, not judgement.</span>
           </h1>
           <p className="hero__lede">
-            Since 2013, Debt Resolution Federation has helped thousands of people across the UK
+            Since 2013, Debt Free Helpline has helped thousands of people across the UK
             take back control of their finances. Free, confidential advice from friendly experts —
             and a clear, achievable path to a debt-free future.
           </p>

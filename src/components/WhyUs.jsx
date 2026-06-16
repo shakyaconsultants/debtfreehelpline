@@ -49,7 +49,7 @@ export default function WhyUs() {
           <span className="eyebrow">Why Choose Us</span>
           <h2>The UK debt-help service that puts people first.</h2>
           <p>
-            Six reasons thousands of UK families have trusted Debt Resolution Federation to guide
+            Six reasons thousands of UK families have trusted Debt Free Helpline to guide
             them out of debt — calmly, clearly, and without judgement.
           </p>
         </div>

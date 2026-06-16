@@ -1,5 +1,5 @@
 /* =============================================
-   GLOBAL STYLES – Debt Resolution Federation
+   GLOBAL STYLES – Debt Free Helpline
    ============================================= */
 
 *, *::before, *::after {
@@ -10,9 +10,9 @@
 
 :root {
   /* Brand palette – matched to official logo */
-  --green-dark:    #1A4230;   /* shield & text dark green  */
-  --green-mid:     #25593F;   /* slightly lighter green    */
-  --green-accent:  #8DC63F;   /* lime stag / CTA green     */
+  --green-dark:    #14203d;   /* shield & text dark green  */
+  --green-mid:     #1e3ba2;   /* slightly lighter green    */
+  --green-accent:  #99abe3;   /* lime stag / CTA green     */
   --green-light:   #E8F5D0;   /* very light lime tint      */
   --cream:         #FAF4EE;   /* logo card cream bg        */
   --cream-dark:    #F0E8DC;   /* slightly darker cream     */
