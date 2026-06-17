@@ -4,39 +4,39 @@ import "./Testimonials.css";
 
 const REVIEWS = [
   {
-    name: "Sarah M.",
+    name: "Rachel T.",
     location: "Manchester",
     debt: "\u00A322,400 of debt",
     rating: 5,
     quote:
-      "I was drowning in credit card debt after my divorce. The team at Debt Free Helpline listened, never judged, and helped me set up an IVA that I could actually afford. Two years in and I sleep at night again.",
-    solution: "IVA Solution",
+      "Credit card debt piled up after my divorce and felt overwhelming. Debt Free Helpline heard me out without judgement and arranged an IVA I could genuinely afford. Two years on, I finally rest easy at night.",
+    solution: "IVA Route",
   },
   {
-    name: "James R.",
+    name: "Michael H.",
     location: "Glasgow",
     debt: "\u00A331,800 of debt",
     rating: 5,
     quote:
-      "After being made redundant, the calls and letters were relentless. One phone call to DRF and within a week the creditors had stopped contacting me. The Trust Deed they arranged is the best decision I have made.",
+      "Losing my job meant endless calls and letters from creditors. One conversation with the team and, within a week, the contact stopped. The Trust Deed they set up has been the best call I have made.",
     solution: "Scottish Trust Deed",
   },
   {
-    name: "Emma & Daniel P.",
+    name: "Laura & Tom W.",
     location: "Birmingham",
     debt: "\u00A348,200 of debt",
     rating: 5,
     quote:
-      "We thought bankruptcy was our only option. Their adviser walked us through every alternative and we ended up with an IVA that protects our home. Honest, friendly, and not at all what we expected.",
-    solution: "IVA Solution",
+      "We assumed bankruptcy was the only way forward. Their adviser talked us through every alternative and we chose an IVA that keeps our home safe. Warm, honest, and nothing like we feared.",
+    solution: "IVA Route",
   },
   {
-    name: "Priya K.",
+    name: "Anika S.",
     location: "London",
     debt: "\u00A39,600 of debt",
     rating: 5,
     quote:
-      "I qualified for a DRO and they actually told me a free charity could help me too. That kind of honesty is rare. I went with DRF because of how they treated me — and I am now debt free.",
+      "I was eligible for a DRO and they were upfront that a free charity could help too. That honesty stood out. I stayed with them because of how I was treated — and I am debt-free now.",
     solution: "Debt Relief Order",
   },
 ];
@@ -49,57 +49,74 @@ export default function Testimonials() {
 
   return (
     <section className="tst section" aria-label="Client testimonials">
+      <div className="tst__bg" aria-hidden />
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Client Stories</span>
-          <h2>Real people. Real debt-free futures.</h2>
+          <h2>Real lives. Real paths to freedom from debt.</h2>
           <p>
-            We are honoured to have helped thousands of UK families take back control of their
-            finances. Here are just a few of their stories.
+            We are proud to have supported thousands of UK families in regaining control of their
+            money. Below are a handful of their experiences.
           </p>
         </div>
 
-        <div className="tst__stage">
-          <button
-            className="tst__nav tst__nav--prev"
-            onClick={prev}
-            aria-label="Previous testimonial"
-          >
-            <FiChevronLeft />
-          </button>
-
+        <div className="tst__slider">
           <article className="tst__card" key={r.name}>
-            <div className="tst__rating" aria-label={`${r.rating} out of 5 stars`}>
-              {Array.from({ length: r.rating }).map((_, k) => (
-                <FiStar key={k} aria-hidden />
-              ))}
+            <div className="tst__card-top">
+              <div className="tst__rating" aria-label={`${r.rating} out of 5 stars`}>
+                {Array.from({ length: r.rating }).map((_, k) => (
+                  <FiStar key={k} aria-hidden />
+                ))}
+              </div>
+              <span className="tst__mark" aria-hidden>&ldquo;</span>
             </div>
-            <blockquote className="tst__quote">"{r.quote}"</blockquote>
+
+            <blockquote className="tst__quote">&ldquo;{r.quote}&rdquo;</blockquote>
+
             <div className="tst__meta">
               <div className="tst__author">
-                <strong>{r.name}</strong>
-                <span>{r.location} · {r.debt}</span>
+                <span className="tst__avatar" aria-hidden>
+                  {r.name.charAt(0)}
+                </span>
+                <div className="tst__author-info">
+                  <strong>{r.name}</strong>
+                  <span>{r.location} · {r.debt}</span>
+                </div>
               </div>
               <span className="tst__solution">{r.solution}</span>
             </div>
           </article>
 
-          <button className="tst__nav tst__nav--next" onClick={next} aria-label="Next testimonial">
-            <FiChevronRight />
-          </button>
-        </div>
-
-        <div className="tst__dots" role="tablist">
-          {REVIEWS.map((_, k) => (
+          <div className="tst__controls">
             <button
-              key={k}
-              className={`tst__dot ${k === i ? "is-active" : ""}`}
-              onClick={() => setI(k)}
-              aria-label={`Go to testimonial ${k + 1}`}
-              aria-selected={k === i}
-              role="tab"
-            />
-          ))}
+              className="tst__nav tst__nav--prev"
+              onClick={prev}
+              aria-label="Previous testimonial"
+            >
+              <FiChevronLeft />
+            </button>
+
+            <div className="tst__dots" role="tablist">
+              {REVIEWS.map((review, k) => (
+                <button
+                  key={review.name}
+                  className={`tst__dot ${k === i ? "is-active" : ""}`}
+                  onClick={() => setI(k)}
+                  aria-label={`Go to testimonial ${k + 1}`}
+                  aria-selected={k === i}
+                  role="tab"
+                />
+              ))}
+            </div>
+
+            <button
+              className="tst__nav tst__nav--next"
+              onClick={next}
+              aria-label="Next testimonial"
+            >
+              <FiChevronRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>

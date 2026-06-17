@@ -17,8 +17,10 @@ import './App.css'
 function App() {
   return (
     <>
-      <TopBar />
-      <Header />
+      <div className="site-header">
+        <TopBar />
+        <Header />
+      </div>
       <main>
         <Hero />
         <TrustBar />

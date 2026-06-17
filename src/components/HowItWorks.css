@@ -1,107 +1,213 @@
 .how {
-  background: var(--cream-dark);
   position: relative;
-}
-
-.how__grid {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.how__card {
   background: var(--white);
-  padding: 36px 30px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--cream-dark);
-  position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   overflow: hidden;
 }
 
-.how__card::before {
+.how__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 45% 50% at 100% 20%, rgba(30, 59, 162, 0.06), transparent 55%),
+    radial-gradient(ellipse 40% 40% at 0% 90%, rgba(20, 32, 61, 0.04), transparent 50%);
+}
+
+/* ── Timeline ── */
+.how__timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 760px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.how__timeline::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--green-dark), var(--green-accent));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.35s ease;
+  left: 31px;
+  top: 36px;
+  bottom: 36px;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--green-mid) 0%,
+    var(--green-accent) 55%,
+    var(--green-mid) 100%
+  );
+  border-radius: 2px;
+  opacity: 0.45;
 }
 
-.how__card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--green-light);
-}
-.how__card:hover::before {
-  transform: scaleX(1);
-}
-
-.how__number {
-  display: block;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--green-mid);
-  margin-bottom: 12px;
+.how__step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 28px;
+  position: relative;
 }
 
-.how__icon {
+.how__step:last-child {
+  padding-bottom: 0;
+}
+
+/* ── Marker (icon + number) ── */
+.how__marker {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.how__dot {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 64px;
   height: 64px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
-  color: var(--green-accent);
-  margin-bottom: 18px;
-  box-shadow: 0 8px 20px rgba(15, 77, 42, 0.18);
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--green-mid);
+  color: var(--green-mid);
+  box-shadow: var(--shadow-sm);
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
-.how__icon svg {
-  width: 28px;
-  height: 28px;
+
+.how__dot svg {
+  width: 26px;
+  height: 26px;
+}
+
+.how__step-num {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.how__step:hover .how__dot {
+  background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+  border-color: var(--green-dark);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+/* ── Card ── */
+.how__card {
+  background: var(--grey-light);
+  border: 1px solid rgba(20, 32, 61, 0.07);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  margin-top: 4px;
+}
+
+.how__card::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: var(--grey-light);
+  border-left: 1px solid rgba(20, 32, 61, 0.07);
+  border-bottom: 1px solid rgba(20, 32, 61, 0.07);
+  transform: rotate(45deg);
+}
+
+.how__step:hover .how__card {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+  background: var(--white);
+  border-color: rgba(30, 59, 162, 0.12);
+}
+
+.how__step:hover .how__card::before {
+  background: var(--white);
+  border-color: rgba(30, 59, 162, 0.12);
+}
+
+.how__label {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 8px;
 }
 
 .how__card h3 {
+  font-family: var(--serif);
   font-size: 1.25rem;
   margin-bottom: 10px;
+  color: var(--charcoal);
+  line-height: 1.25;
 }
 
 .how__card p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
+  color: var(--grey);
+  line-height: 1.75;
 }
 
-@media (max-width: 980px) {
-  .how__grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 640px) {
+  .how__timeline {
+    max-width: 100%;
   }
-}
 
-@media (max-width: 600px) {
-  .how__grid {
-    grid-template-columns: 1fr;
+  .how__timeline::before {
+    left: 23px;
+    top: 28px;
+    bottom: 28px;
   }
+
+  .how__step {
+    grid-template-columns: 48px 1fr;
+    gap: 16px;
+    padding-bottom: 22px;
+  }
+
+  .how__dot {
+    width: 48px;
+    height: 48px;
+  }
+
+  .how__dot svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .how__step-num {
+    font-size: 0.58rem;
+  }
+
   .how__card {
-    padding: 28px 24px;
+    padding: 20px 18px;
   }
-}
 
-@media (max-width: 480px) {
-  .how__card {
-    padding: 22px 18px;
+  .how__card::before {
+    top: 22px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
   }
-  .how__icon {
-    width: 52px;
-    height: 52px;
+
+  .how__card h3 {
+    font-size: 1.1rem;
+  }
+
+  .how__step:hover .how__card {
+    transform: none;
   }
 }

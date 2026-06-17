@@ -4,28 +4,28 @@ import "./FAQ.css";
 
 const FAQS = [
   {
-    q: "Is contacting Debt Free Helpline free?",
-    a: "Yes. Your initial consultation, eligibility check and personalised debt advice are 100% free of charge. We will only ever charge a fee if you choose to proceed with a formal debt solution like an IVA, and any fees are explained clearly and in writing before you commit to anything.",
+    q: "Does it cost anything to contact Debt Free Helpline?",
+    a: "No. Your first consultation, eligibility review and tailored debt guidance are completely free. We only charge if you decide to move ahead with a formal solution such as an IVA — and every fee is set out plainly in writing before you agree to anything.",
   },
   {
-    q: "Will a debt solution affect my credit rating?",
-    a: "Most formal debt solutions, including IVAs, DROs, Trust Deeds and bankruptcy, will be recorded on your credit file and will affect your ability to obtain credit during their term and for up to 6 years from the start date. Our advisers will explain exactly how each option will impact you so you can make an informed decision.",
+    q: "Will choosing a debt solution harm my credit rating?",
+    a: "Most formal routes — IVAs, DROs, Trust Deeds and bankruptcy included — appear on your credit file and can limit borrowing during the arrangement and for up to six years from when it begins. Our advisers spell out how each path could affect you so you can decide with confidence.",
   },
   {
-    q: "How quickly can creditor calls and letters stop?",
-    a: "Once an IVA proposal is filed and an interim order is in place, creditors are legally prevented from contacting you or pursuing further action. For most clients, this happens within a few weeks of starting the process — and the constant contact stops almost immediately when we begin liaising on your behalf.",
+    q: "How soon can creditor calls and letters end?",
+    a: "After an IVA proposal is submitted and an interim order takes effect, creditors are legally barred from contacting you or taking further steps. For most people this falls within a few weeks of beginning — and the steady stream of calls and letters often eases almost as soon as we start handling things for you.",
   },
   {
-    q: "Am I eligible for an IVA?",
-    a: "An IVA is generally suitable if you live in England, Wales or Northern Ireland, owe at least £6,000 to two or more creditors, and have a regular income that allows you to make some monthly contribution. There are equivalents available in Scotland (Trust Deed). The best way to find out is a free, no-obligation chat with one of our advisers.",
+    q: "Could I qualify for an IVA?",
+    a: "An IVA is usually an option if you are based in England, Wales or Northern Ireland, owe £6,000 or more to at least two creditors, and earn enough to make a regular monthly payment. Scotland has a similar route through a Trust Deed. The simplest way to check is a complimentary, no-pressure conversation with one of our advisers.",
   },
   {
-    q: "What if a free debt charity could help me instead?",
-    a: "If a free service like StepChange, National Debtline or Citizens Advice is the better option for your circumstances, we will tell you. Honesty is at the heart of how we work — we would rather lose a client than recommend something that is not in your best interest.",
+    q: "What if a free debt charity is the better choice?",
+    a: "When a no-cost service such as StepChange, National Debtline or Citizens Advice suits your situation better, we will say so. Integrity guides everything we do — we would sooner point you elsewhere than suggest something that is not right for you.",
   },
   {
-    q: "Is my information kept confidential?",
-    a: "Absolutely. All information you share with us is held securely under UK GDPR. We will never sell, share or disclose your details to third parties without your explicit consent — and only ever to the licensed Insolvency Practitioner or solution provider you choose to work with.",
+    q: "Will my personal details stay confidential?",
+    a: "Yes, without question. Everything you tell us is stored safely in line with UK GDPR. We never sell or pass on your data to outside parties unless you clearly agree — and only to the authorised Insolvency Practitioner or provider you select.",
   },
 ];
 
@@ -36,15 +36,15 @@ export default function FAQ() {
     <section className="faq section" id="faq">
       <div className="container faq__inner">
         <div className="faq__head">
-          <span className="eyebrow">Frequently Asked Questions</span>
-          <h2>Your questions, answered honestly.</h2>
+          <span className="eyebrow">Common Questions</span>
+          <h2>Straight answers to what you want to know.</h2>
           <p>
-            We get the same questions every day — and we love answering them. If yours is not
-            covered here, give us a call on{" "}
-            <a href="tel:03330916630">0333 091 6630</a> and we will be happy to help.
+            These come up all the time — and we are always glad to explain. If you cannot find
+            yours below, ring us on{" "}
+            <a href="tel:01915004548">0191 500 4548</a> and we will gladly assist.
           </p>
           <a href="#contact-form" className="btn btn--primary faq__cta">
-            Speak to an Adviser
+            Talk to an Adviser
           </a>
         </div>
 

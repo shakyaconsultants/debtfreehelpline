@@ -1,16 +1,15 @@
 .trustbar {
   background: var(--white);
-  border-top: 1px solid var(--cream-dark);
-  border-bottom: 1px solid var(--cream-dark);
-  padding: 22px 0;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
 }
 
 .trustbar__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 16px 28px;
 }
 
 .trustbar__item {
@@ -18,23 +17,34 @@
   align-items: center;
   gap: 10px;
   color: var(--charcoal);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 500;
+  padding: 10px 18px;
+  background: var(--grey-light);
+  border-radius: 999px;
+  border: none;
+  transition: background 0.2s ease;
+}
+.trustbar__item:hover {
+  background: var(--green-light);
 }
 
 .trustbar__item svg {
-  width: 22px;
-  height: 22px;
+  width: 17px;
+  height: 17px;
   color: var(--green-mid);
   flex-shrink: 0;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 600px) {
+  .trustbar {
+    padding: 22px 0;
+  }
   .trustbar__inner {
-    justify-content: center;
-    gap: 14px 22px;
+    gap: 10px 14px;
   }
   .trustbar__item {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
+    padding: 8px 14px;
   }
 }

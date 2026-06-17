@@ -5,75 +5,75 @@ const SOLUTIONS = [
   {
     name: "Individual Voluntary Arrangement",
     short: "IVA",
-    pitch: "Our specialist solution. A formal, legally binding agreement to repay what you can afford over 5–6 years. Remaining debt is written off.",
+    pitch: "Our core offering. A formal, legally binding plan to repay what you can manage over 5–6 years, with the remainder written off.",
     features: [
-      "Write off unaffordable debt",
-      "One monthly payment",
-      "Stops creditor action",
-      "Available in England, Wales & NI",
+      "Clear unaffordable debt",
+      "Single monthly payment",
+      "Halts creditor enforcement",
+      "Offered in England, Wales & NI",
     ],
-    flag: "Most chosen",
+    flag: "Most popular",
     region: "England · Wales · NI",
   },
   {
     name: "Debt Management Plan",
     short: "DMP",
-    pitch: "An informal arrangement to pay off your debts at a more affordable monthly rate while keeping things flexible.",
+    pitch: "An informal setup to repay debts at a reduced monthly level while retaining flexibility.",
     features: [
-      "Lower monthly payments",
-      "Informal & flexible",
-      "Pay back full amount over time",
-      "Creditors can still add interest",
+      "Reduced monthly repayments",
+      "Informal and adaptable",
+      "Repay the full balance over time",
+      "Interest may still be applied",
     ],
-    region: "UK-wide",
+    region: "Across the UK",
   },
   {
     name: "Debt Relief Order",
     short: "DRO",
-    pitch: "For those with low income, few assets and debts under £30,000. After 12 months, qualifying debts are typically written off.",
+    pitch: "Designed for people on low income with limited assets and debts below £30,000. Qualifying debts are often cleared after 12 months.",
     features: [
-      "Low income solution",
+      "Suited to lower incomes",
       "Debts up to £30,000",
-      "12-month qualifying period",
-      "Lower setup costs",
+      "12-month qualifying window",
+      "Lower setup fees",
     ],
     region: "England · Wales · NI",
   },
   {
     name: "Trust Deed",
     short: "Scottish Trust Deed",
-    pitch: "The Scottish equivalent of an IVA — a legally binding way to repay what you can afford, with the rest typically written off after 4 years.",
+    pitch: "Scotland's equivalent of an IVA — a binding arrangement to pay what you can afford, with the rest usually written off after 4 years.",
     features: [
       "Scotland's IVA equivalent",
-      "Typically 4-year term",
-      "Stops creditor action",
-      "Protects qualifying assets",
+      "Typically a 4-year term",
+      "Stops creditor contact",
+      "Safeguards qualifying assets",
     ],
     region: "Scotland",
   },
   {
     name: "Bankruptcy",
     short: "Bankruptcy",
-    pitch: "A formal insolvency procedure that may be appropriate when other solutions are not suitable. We will explain the implications fully.",
+    pitch: "A formal insolvency route when other options are not suitable. We outline every consequence clearly before you decide.",
     features: [
-      "Most debts written off",
-      "Typically lasts 12 months",
-      "Affects credit rating",
-      "Some assets may be sold",
+      "Most debts discharged",
+      "Usually concludes in 12 months",
+      "Impacts credit rating",
+      "Certain assets may be sold",
     ],
-    region: "UK-wide",
+    region: "Across the UK",
   },
   {
-    name: "Consolidation Advice",
+    name: "Consolidation Guidance",
     short: "Loan / Consolidation",
-    pitch: "Sometimes a simple consolidation loan is the right choice. We help you compare and understand the impact before committing.",
+    pitch: "In some cases, a consolidation loan is the right move. We help you weigh up the effects before you commit.",
     features: [
-      "Combine multiple debts",
-      "One fixed monthly payment",
-      "Keeps your credit options open",
-      "Honest comparison advice",
+      "Merge multiple debts",
+      "One fixed monthly sum",
+      "Preserves credit choices",
+      "Impartial comparison advice",
     ],
-    region: "UK-wide",
+    region: "Across the UK",
   },
 ];
 
@@ -82,12 +82,12 @@ export default function Solutions() {
     <section className="solutions section" id="solutions">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Debt Solutions</span>
-          <h2>The right solution for your situation.</h2>
+          <span className="eyebrow">Debt Relief Options</span>
+          <h2>The best fit for your circumstances.</h2>
           <p>
-            There is no one-size-fits-all answer to debt. We will walk you through every UK debt
-            solution available, explain the pros and cons, and help you choose the path that fits
-            your life — not ours.
+            Debt has no single right answer. We guide you through each UK option on the table,
+            outline the benefits and drawbacks, and support you in picking the route that suits
+            your life — not our interests.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function Solutions() {
               <div className="sol-card__foot">
                 <span className="sol-card__region">{s.region}</span>
                 <a href="#contact-form" className="sol-card__link">
-                  Learn more <FiArrowRight aria-hidden />
+                  Find out more <FiArrowRight aria-hidden />
                 </a>
               </div>
             </article>

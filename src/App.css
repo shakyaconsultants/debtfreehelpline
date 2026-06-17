@@ -4,6 +4,18 @@
   min-height: 100vh;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 20px rgba(20, 32, 61, 0.08);
+}
+
+.site-header .header {
+  position: relative;
+  top: auto;
+}
+
 main {
   flex: 1;
 }

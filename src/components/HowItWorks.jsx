@@ -11,58 +11,67 @@ import "./HowItWorks.css";
 const STEPS = [
   {
     icon: FiClipboard,
-    title: "Quick Assessment",
-    body: "We ask a few simple questions about your debts, income and outgoings — no jargon, no judgement. Takes around 5 minutes.",
+    title: "Brief Initial Review",
+    body: "We cover a handful of straightforward questions on your debts, earnings and spending — plain language, no criticism. About 5 minutes.",
   },
   {
     icon: FiPhone,
-    title: "Free Consultation",
-    body: "A friendly UK-based specialist reviews your full situation and explains every option available to you, in plain English.",
+    title: "Complimentary Consultation",
+    body: "A supportive UK adviser examines your complete circumstances and sets out every route open to you, in everyday terms.",
   },
   {
     icon: FiFileText,
-    title: "Proposal Preparation",
-    body: "If an IVA is right for you, we refer you to a licensed Insolvency Practitioner who prepares a tailored proposal.",
+    title: "Tailored Proposal Drafting",
+    body: "When an IVA suits your needs, we connect you with an authorised Insolvency Practitioner to prepare a personalised proposal.",
   },
   {
     icon: FiCheckCircle,
-    title: "Creditor Approval",
-    body: "Your creditors vote on the IVA. Once approved, they are legally bound to its terms — no more chasing or interest.",
+    title: "Agreement by Creditors",
+    body: "Your creditors cast their votes on the IVA. After approval, they must honour its conditions — contact and interest charges stop.",
   },
   {
     icon: FiCreditCard,
-    title: "One Monthly Payment",
-    body: "You make a single, affordable payment each month — based on what you can realistically afford, not what creditors demand.",
+    title: "Single Monthly Instalment",
+    body: "You pay one realistic amount each month — shaped by what you can manage, not what lenders insist upon.",
   },
   {
     icon: FiSmile,
-    title: "Debt-Free Future",
-    body: "After 5 or 6 years (typically), any remaining qualifying debt is written off. You start fresh — completely debt-free.",
+    title: "A Fresh Start",
+    body: "Usually after 5 or 6 years, any outstanding eligible debt is cleared. You move forward — entirely free of debt.",
   },
 ];
 
 export default function HowItWorks() {
   return (
     <section className="how section" id="how">
+      <div className="how__bg" aria-hidden />
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">How It Works</span>
-          <h2>Six simple steps to becoming debt-free.</h2>
+          <span className="eyebrow">Our Process</span>
+          <h2>Six clear stages on your path to becoming debt-free.</h2>
           <p>
-            Our process is designed to feel calm and human. From the first phone call to your final
-            payment, you will know exactly where you stand — every step of the way.
+            Our approach is built to feel reassuring and personal. From your opening conversation
+            through to your final payment, you will always understand where you stand — at every
+            stage.
           </p>
         </div>
 
-        <ol className="how__grid">
+        <ol className="how__timeline">
           {STEPS.map(({ icon: Icon, title, body }, i) => (
-            <li className="how__card" key={title}>
-              <span className="how__number">Step {String(i + 1).padStart(2, "0")}</span>
-              <span className="how__icon" aria-hidden>
-                <Icon />
-              </span>
-              <h3>{title}</h3>
-              <p>{body}</p>
+            <li className="how__step" key={title}>
+              <div className="how__marker" aria-hidden>
+                <span className="how__dot">
+                  <Icon />
+                </span>
+                <span className="how__step-num">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+              </div>
+              <article className="how__card">
+                <span className="how__label">Stage {String(i + 1).padStart(2, "0")}</span>
+                <h3>{title}</h3>
+                <p>{body}</p>
+              </article>
             </li>
           ))}
         </ol>

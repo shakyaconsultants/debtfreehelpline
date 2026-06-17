@@ -6,48 +6,64 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="hero__bg" aria-hidden />
       <div className="container hero__inner">
-        <div className="hero__copy">
-          <span className="hero__pill">
-            <FiShield aria-hidden /> Regulated UK Debt Help &amp; IVA Specialists
-          </span>
-          <h1>
-            Get out of debt — <span className="hero__accent">with dignity, not judgement.</span>
-          </h1>
-          <p className="hero__lede">
-            Since 2013, Debt Free Helpline has helped thousands of people across the UK
-            take back control of their finances. Free, confidential advice from friendly experts —
-            and a clear, achievable path to a debt-free future.
-          </p>
+        <div className="hero__layout">
+          <div className="hero__intro">
+            <span className="hero__pill">
+              <FiShield aria-hidden /> Authorised UK Debt Support &amp; IVA Experts
+            </span>
+            <h1>
+              Leave debt behind —{" "}
+              <span className="hero__accent">with respect, not shame.</span>
+            </h1>
+            <p className="hero__lede">
+              For more than a decade, Debt Free Helpline has guided thousands of UK residents
+              toward stronger financial footing. Caring advisers provide no-cost, private support —
+              and help you map out a practical plan for lasting freedom from debt.
+            </p>
 
-          <ul className="hero__bullets">
-            <li>
-              <FiCheck aria-hidden /> One affordable monthly payment
-            </li>
-            <li>
-              <FiCheck aria-hidden /> Stop interest, charges &amp; creditor calls
-            </li>
-            <li>
-              <FiCheck aria-hidden /> Write off a large portion of unaffordable debt
-            </li>
-            <li>
-              <FiCheck aria-hidden /> Protected under UK insolvency legislation
-            </li>
-          </ul>
+            <div className="hero__ctas">
+              <a href="#contact-form" className="btn btn-accent">
+                Begin Your Free Review <FiArrowRight aria-hidden />
+              </a>
+              <a href="tel:01915004548" className="btn btn--outline-dark">
+                <FiPhoneCall aria-hidden /> 0191 500 4548
+              </a>
+            </div>
 
-          <div className="hero__ctas">
-            <a href="#contact-form" className="btn btn--primary">
-              Start Free Assessment <FiArrowRight aria-hidden />
-            </a>
-            <a href="tel:03330916630" className="btn btn--outline-dark">
-              <FiPhoneCall aria-hidden /> 0333 091 6630
-            </a>
+            <p className="hero__fineprint">
+              100% free, confidential advice · No obligation · FCA-aware service
+            </p>
           </div>
 
-          <p className="hero__fineprint">
-            100% free, confidential advice · No obligation · FCA-aware service
-          </p>
+          <div className="hero__panel">
+            <ul className="hero__bullets">
+              <li>
+                <span className="hero__bullet-icon" aria-hidden>
+                  <FiCheck />
+                </span>
+                One manageable payment each month
+              </li>
+              <li>
+                <span className="hero__bullet-icon" aria-hidden>
+                  <FiCheck />
+                </span>
+                Halt interest, fees and contact from creditors
+              </li>
+              <li>
+                <span className="hero__bullet-icon" aria-hidden>
+                  <FiCheck />
+                </span>
+                Have a significant share of unmanageable debt written off
+              </li>
+              <li>
+                <span className="hero__bullet-icon" aria-hidden>
+                  <FiCheck />
+                </span>
+                Safeguarded by UK insolvency law
+              </li>
+            </ul>
+          </div>
         </div>
-
       </div>
     </section>
   );
