@@ -1,10 +1,10 @@
 import "./Stats.css";
 
 const STATS = [
-  { value: "12,400+", label: "UK clients helped since 2013" },
-  { value: "\u00A387M+", label: "Of unaffordable debt resolved" },
-  { value: "94%", label: "Client satisfaction rating" },
-  { value: "4.9\u2605", label: "Average Trustpilot review" },
+  { value: "12,400+", label: "UK residents supported since 2013" },
+  { value: "\u00A387M+", label: "In unmanageable debt cleared" },
+  { value: "94%", label: "Overall client satisfaction" },
+  { value: "4.9\u2605", label: "Typical Trustpilot score" },
 ];
 
 export default function Stats() {

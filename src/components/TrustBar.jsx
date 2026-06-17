@@ -2,11 +2,11 @@ import { FiShield, FiAward, FiLock, FiUsers, FiStar } from "react-icons/fi";
 import "./TrustBar.css";
 
 const ITEMS = [
-  { icon: FiShield, label: "FCA-aware service" },
-  { icon: FiAward, label: "Licensed Insolvency Practitioners" },
-  { icon: FiLock, label: "100% confidential" },
-  { icon: FiUsers, label: "12,000+ helped since 2013" },
-  { icon: FiStar, label: "4.9★ Trustpilot rated" },
+  { icon: FiShield, label: "Guidance aligned with FCA standards" },
+  { icon: FiAward, label: "Authorised Insolvency Practitioners" },
+  { icon: FiLock, label: "Fully private & confidential" },
+  { icon: FiUsers, label: "12,000+ clients supported since 2013" },
+  { icon: FiStar, label: "4.9★ rated on Trustpilot" },
 ];
 
 export default function TrustBar() {

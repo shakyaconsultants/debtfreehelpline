@@ -36,14 +36,15 @@ export default function Contact() {
 
   return (
     <section className="contact section" id="contact">
+      <div className="contact__bg" aria-hidden="true" />
       <div className="container contact__grid">
         <div className="contact__info">
-          <span className="eyebrow">Get In Touch</span>
-          <h2>Speak with a UK debt specialist today.</h2>
+          <span className="eyebrow">Contact Us</span>
+          <h2>Talk to a UK debt expert today.</h2>
           <p>
-            Take the first step towards a debt-free future. Contact us today for a free, no-obligation
-            consultation. Our friendly team will listen carefully, assess your situation, and
-            recommend the best course of action for you.
+            Begin your journey toward a debt-free life. Reach out for a complimentary consultation
+            with no obligation. Our approachable team will listen closely, review your circumstances,
+            and suggest the most suitable next steps for you.
           </p>
 
           <ul className="contact__details">
@@ -52,7 +53,7 @@ export default function Contact() {
                 <FiMapPin />
               </span>
               <div>
-                <h4>Visit Our Office</h4>
+                <h4>Our Office</h4>
                 <p>13 Wilton Place, Basingstoke, Hampshire, RG21 7UD</p>
               </div>
             </li>
@@ -61,9 +62,9 @@ export default function Contact() {
                 <FiPhone />
               </span>
               <div>
-                <h4>Free Advice Line</h4>
+                <h4>Free helpline</h4>
                 <p>
-                  <a href="tel:03330916630">0333 091 6630</a>
+                  <a href="tel:01915004548">0191 500 4548</a>
                 </p>
               </div>
             </li>
@@ -72,7 +73,7 @@ export default function Contact() {
                 <FiMail />
               </span>
               <div>
-                <h4>Email Us</h4>
+                <h4>Send an Email</h4>
                 <p>
                   <a href="mailto:info@debtfreehelpline.org.uk">
                     info@debtfreehelpline.org.uk
@@ -85,9 +86,9 @@ export default function Contact() {
                 <FiClock />
               </span>
               <div>
-                <h4>Opening Hours</h4>
+                <h4>When We Are Open</h4>
                 <p>
-                  Mon – Fri: 9:00am – 7:00pm
+                  Monday – Friday: 9:00am – 7:00pm
                   <br />
                 </p>
               </div>
@@ -105,18 +106,18 @@ export default function Contact() {
               <p>
                 A member of our friendly UK team will be in touch within one working day. If your
                 situation is urgent, please call us on{" "}
-                <a href="tel:03330916630">0333 091 6630</a>.
+                <a href="tel:01915004548">0191 500 4548</a>.
               </p>
             </div>
           ) : (
             <form id="contact-form" ref={formRef} className="contact__form" onSubmit={onSubmit}>
-              <h3>Request a free callback</h3>
-              <p>Fill in the form and we will call you at a time that suits you.</p>
+              <h3>Arrange a free callback</h3>
+              <p>Complete the form and we will ring you at a time that works for you.</p>
 
               {status === "error" && (
                 <div className="contact__error-banner">
                   Something went wrong. Please try again or call us on{" "}
-                  <a href="tel:03330916630">0333 091 6630</a>.
+                  <a href="tel:01915004548">0191 500 4548</a>.
                 </div>
               )}
 

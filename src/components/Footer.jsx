@@ -20,12 +20,12 @@ const QUICK_LINKS = [
 ];
 
 const SOLUTION_LINKS = [
-  "Individual Voluntary Arrangement (IVA)",
-  "Debt Management Plan",
-  "Debt Relief Order",
-  "Scottish Trust Deed",
-  "Bankruptcy Advice",
-  "Loan Consolidation",
+  "IVA — Individual Voluntary Arrangement",
+  "Debt Management Programme",
+  "DRO — Debt Relief Order",
+  "Trust Deed (Scotland)",
+  "Guidance on Bankruptcy",
+  "Consolidation Loan Advice",
 ];
 
 export default function Footer() {
@@ -43,12 +43,13 @@ export default function Footer() {
             </span>
           </a>
           <p>
-            We help individuals and families across the United Kingdom find a clear, achievable
-            path out of debt. Honest advice, personal care, and lasting financial freedom.
+            We support people and households throughout the UK in discovering a realistic,
+            step-by-step way out of debt. Straightforward guidance, thoughtful support, and
+            long-term financial peace of mind.
           </p>
           <div className="footer__contact">
-            <a href="tel:03330916630">
-              <FiPhone aria-hidden /> 0333 091 6630
+            <a href="tel:01915004548">
+              <FiPhone aria-hidden /> 0191 500 4548
             </a>
             <a href="mailto:info@debtfreehelpline.org.uk">
               <FiMail aria-hidden /> info@debtfreehelpline.org.uk
@@ -78,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__col">
-          <h4>Debt Solutions</h4>
+          <h4>Debt Relief Options</h4>
           <ul>
             {SOLUTION_LINKS.map((l) => (
               <li key={l}>
@@ -89,39 +90,39 @@ export default function Footer() {
         </div>
 
         <div className="footer__col">
-          <h4>Free Help &amp; Resources</h4>
+          <h4>Free Support &amp; Guidance</h4>
           <ul>
-            <li><a href="https://www.stepchange.org" target="_blank" rel="noreferrer">StepChange Debt Charity</a></li>
-            <li><a href="https://www.nationaldebtline.org" target="_blank" rel="noreferrer">National Debtline</a></li>
-            <li><a href="https://www.citizensadvice.org.uk" target="_blank" rel="noreferrer">Citizens Advice</a></li>
-            <li><a href="https://www.moneyhelper.org.uk" target="_blank" rel="noreferrer">MoneyHelper (HM Government)</a></li>
-            <li><a href="https://www.gov.uk/options-for-paying-off-your-debts" target="_blank" rel="noreferrer">Gov.uk Debt Options</a></li>
+            <li><a href="https://www.stepchange.org" target="_blank" rel="noreferrer">StepChange Charity for Debt</a></li>
+            <li><a href="https://www.nationaldebtline.org" target="_blank" rel="noreferrer">National Debtline Helpline</a></li>
+            <li><a href="https://www.citizensadvice.org.uk" target="_blank" rel="noreferrer">Citizens Advice Bureau</a></li>
+            <li><a href="https://www.moneyhelper.org.uk" target="_blank" rel="noreferrer">MoneyHelper — UK Government</a></li>
+            <li><a href="https://www.gov.uk/options-for-paying-off-your-debts" target="_blank" rel="noreferrer">Gov.uk — Debt Repayment Options</a></li>
           </ul>
         </div>
       </div>
 
       <div className="container">
         <div className="footer__legal">
-          <h5>Important Information</h5>
+          <h5>Important Notice</h5>
           <p>
-            Debt Free Helpline provides free, confidential debt advice. We may refer
-            clients to a licensed Insolvency Practitioner who will charge fees for setting up and
-            managing a formal debt solution such as an Individual Voluntary Arrangement (IVA).
-            All fees are clearly disclosed in writing before any agreement is entered into.
+            Debt Free Helpline offers complimentary, private debt guidance. We may connect clients
+            with an authorised Insolvency Practitioner who charges for establishing and overseeing
+            a formal solution such as an Individual Voluntary Arrangement (IVA). Every fee is
+            explained in writing before you commit to anything.
           </p>
           <p>
-            Free debt advice is also available from registered charities such as StepChange,
-            National Debtline and Citizens Advice. To find out more about managing your money
-            and getting free debt advice, visit{" "}
+            No-cost debt support is also offered by registered charities including StepChange,
+            National Debtline and Citizens Advice. For further help with money management and free
+            debt guidance, visit{" "}
             <a href="https://www.moneyhelper.org.uk" target="_blank" rel="noreferrer">
               MoneyHelper
             </a>
-            , an independent service set up to help people manage their money.
+            , an independent service created to assist people with their finances.
           </p>
           <p>
-            Entering a formal debt solution may impact your credit rating and ability to obtain
-            credit in the future. Where appropriate, suitable alternatives such as a Debt
-            Management Plan (DMP) will always be discussed.
+            Taking up a formal debt arrangement can affect your credit file and future borrowing.
+            Whenever relevant, we will also talk through suitable alternatives such as a Debt
+            Management Plan (DMP).
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FiMenu, FiX, FiPhone } from "react-icons/fi";
+import { FiMenu, FiX, FiPhone, FiArrowRight } from "react-icons/fi";
 import logo from "../assets/logo.png";
 import "./Header.css";
 
@@ -43,15 +43,18 @@ export default function Header() {
         </nav>
 
         <div className="header__cta">
-          <a href="tel:03330916630" className="header__phone">
-            <FiPhone aria-hidden />
-            <span>
-              <small>Free advice line</small>
-              <strong>0333 091 6630</strong>
+          <a href="tel:01915004548" className="header__phone">
+            <span className="header__phone-icon" aria-hidden>
+              <FiPhone />
+            </span>
+            <span className="header__phone-text">
+              <small>Free helpline</small>
+              <strong>0191 500 4548</strong>
             </span>
           </a>
           <a href="#contact-form" className="btn btn--primary header__btn">
-            Get Free Advice
+            Ask for help
+            <FiArrowRight aria-hidden />
           </a>
           <button
             className="header__toggle"

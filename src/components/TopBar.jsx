@@ -15,11 +15,12 @@ export default function TopBar() {
           </span>
         </div>
         <div className="topbar__right">
-          <a href="mailto:info@debtfreehelpline.org.uk" className="topbar__item">
-            <FiMail aria-hidden />debthelp@debtfreehelpline.org.uk,  info@debtfreehelpline.org.uk
+          <a href="mailto:info@debtfreehelpline.org.uk" className="topbar__item topbar__email topbar__hide-sm">
+            <FiMail aria-hidden />
+            debthelp@debtfreehelpline.org.uk,  info@debtfreehelpline.org.uk
           </a>
-          <a href="tel:03330916630" className="topbar__item topbar__phone">
-            <FiPhone aria-hidden /> 0333 091 6630
+          <a href="tel:01915004548" className="topbar__item topbar__phone">
+            <FiPhone aria-hidden /> 0191 500 4548
           </a>
         </div>
       </div>
